@@ -3,61 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Profile</title>
-
+  <title>@satsuki_shinonome</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <img src="assets/profile.jpg" alt="Foto profil" class="profile-image" />
-
-    <div>
-      <p class="label">PROFILE PAGE</p>
-      <h1>Nama Tokoh / Nama Profil</h1>
-      <p class="description">
-        Deskripsi singkat mengenai profil, keahlian, minat, atau portfolio.
-      </p>
-
-      <a href="https://github.com/" target="_blank" class="button">
-        Lihat GitHub
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <h2>Tentang</h2>
-      <p>
-        Halaman ini adalah halaman portfolio atau simulasi profil yang dibuat
-        menggunakan HTML, CSS, JavaScript, dan aset dari repository GitHub.
-      </p>
-    </section>
-
-    <section>
-      <h2>Proyek</h2>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Proyek 1</h3>
-          <p>Deskripsi singkat proyek pertama.</p>
-        </article>
-
-        <article class="project-card">
-          <h3>Proyek 2</h3>
-          <p>Deskripsi singkat proyek kedua.</p>
-        </article>
-
-        <article class="project-card">
-          <h3>Proyek 3</h3>
-          <p>Deskripsi singkat proyek ketiga.</p>
-        </article>
+  <div class="app-shell">
+    <header class="topbar" aria-label="Navigasi profil">
+      <button class="icon-button" type="button" aria-label="Kembali">&lt;</button>
+      <div class="topbar-title">
+        <strong>satsuki_shinonome</strong>
+        <span>14 posts</span>
       </div>
-    </section>
-  </main>
+      <div class="topbar-actions">
+        <button class="icon-button" type="button" aria-label="Tambah konten">+</button>
+        <button class="icon-button" type="button" aria-label="Menu">...</button>
+      </div>
+    </header>
 
-  <footer>
-    <p>© 2026 Portfolio Demo</p>
-  </footer>
+    <main class="profile-page">
+      <section class="profile-header" aria-label="Informasi profil">
+        <div class="avatar-wrap">
+          <img src="assets/profile.jpg" alt="Foto profil Satsuki Shinonome" class="profile-avatar" />
+        </div>
+
+        <div class="profile-main">
+          <div class="desktop-identity">
+            <h1>satsuki_shinonome</h1>
+            <button class="primary-action" type="button">Follow</button>
+            <button class="secondary-action" type="button">Message</button>
+            <button class="icon-button borderless" type="button" aria-label="Pengaturan">...</button>
+          </div>
+
+          <dl class="stats">
+            <div>
+              <dt>14</dt>
+              <dd>posts</dd>
+            </div>
+            <div>
+              <dt>12.8K</dt>
+              <dd>followers</dd>
+            </div>
+            <div>
+              <dt>184</dt>
+              <dd>following</dd>
+            </div>
+          </dl>
+
+          <div class="bio desktop-bio">
+            <strong>Satsuki Shinonome</strong>
+            <span>Digital persona / portfolio archive</span>
+            <p>Student aura, midnight coding, clean UI, and quiet blue energy. Building tiny worlds one commit at a time.</p>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/satsuki-shinonome</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bio mobile-bio" aria-label="Bio profil">
+        <strong>Satsuki Shinonome</strong>
+        <span>Digital persona / portfolio archive</span>
+        <p>Student aura, midnight coding, clean UI, and quiet blue energy. Building tiny worlds one commit at a time.</p>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/satsuki-shinonome</a>
+      </section>
+
+      <div class="mobile-actions" aria-label="Aksi profil">
+        <button class="primary-action" type="button">Follow</button>
+        <button class="secondary-action" type="button">Message</button>
+        <button class="secondary-action small" type="button">v</button>
+      </div>
+
+      <section class="highlights" aria-label="Sorotan profil">
+        <article class="highlight">
+          <span class="highlight-ring">UI</span>
+          <strong>design</strong>
+        </article>
+        <article class="highlight">
+          <span class="highlight-ring">JS</span>
+          <strong>scripts</strong>
+        </article>
+        <article class="highlight">
+          <span class="highlight-ring">GH</span>
+          <strong>github</strong>
+        </article>
+        <article class="highlight">
+          <span class="highlight-ring">CV</span>
+          <strong>profile</strong>
+        </article>
+      </section>
+
+      <nav class="profile-tabs" aria-label="Tab konten profil">
+        <button class="tab active" type="button" data-filter="all">POSTS</button>
+        <button class="tab" type="button" data-filter="reels">REELS</button>
+        <button class="tab" type="button" data-filter="tagged">TAGGED</button>
+      </nav>
+
+      <section class="post-grid" aria-label="Grid postingan">
+        <article class="post tile-photo large" data-type="all">
+          <img src="assets/profile.jpg" alt="Portrait Satsuki" />
+          <span>12.4K</span>
+        </article>
+        <article class="post tile-note" data-type="reels">
+          <strong>Night Build</strong>
+          <p>HTML, CSS, and one stubborn idea polished after class.</p>
+        </article>
+        <article class="post tile-code" data-type="all">
+          <strong>Portfolio.jsx</strong>
+          <code>&lt;Profile mood="blue" /&gt;</code>
+        </article>
+        <article class="post tile-photo crop-top" data-type="tagged">
+          <img src="assets/profile.jpg" alt="Detail seragam biru" />
+          <span>8.1K</span>
+        </article>
+        <article class="post tile-metric" data-type="all">
+          <small>current status</small>
+          <strong>online</strong>
+          <p>shipping pixels carefully</p>
+        </article>
+        <article class="post tile-gradient" data-type="reels">
+          <strong>Mini Reel</strong>
+          <p>3 seconds of interface magic.</p>
+        </article>
+        <article class="post tile-code dark" data-type="all">
+          <strong>README.md</strong>
+          <code>hello, visitor.</code>
+        </article>
+        <article class="post tile-photo crop-face" data-type="tagged">
+          <img src="assets/profile.jpg" alt="Close-up portrait Satsuki" />
+          <span>9.7K</span>
+        </article>
+        <article class="post tile-note pale" data-type="all">
+          <strong>Saved</strong>
+          <p>Ideas for a calmer portfolio homepage.</p>
+        </article>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
