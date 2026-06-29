@@ -3,141 +3,274 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>@satsuki_shinonome</title>
+  <title>satsuki_shinonome • Profile</title>
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
+
 <body>
-  <div class="app-shell">
-    <header class="topbar" aria-label="Navigasi profil">
-      <button class="icon-button" type="button" aria-label="Kembali">&lt;</button>
-      <div class="topbar-title">
-        <strong>satsuki_shinonome</strong>
-        <span>14 posts</span>
-      </div>
-      <div class="topbar-actions">
-        <button class="icon-button" type="button" aria-label="Tambah konten">+</button>
-        <button class="icon-button" type="button" aria-label="Menu">...</button>
-      </div>
-    </header>
+  <aside class="sidebar">
+    <div class="brand">
+      <i class="fa-solid fa-camera-retro"></i>
+      <span>Pixora</span>
+    </div>
 
-    <main class="profile-page">
-      <section class="profile-header" aria-label="Informasi profil">
-        <div class="avatar-wrap">
-          <img src="assets/profile.jpg" alt="Foto profil Satsuki Shinonome" class="profile-avatar" />
+    <nav class="menu">
+      <a href="#" class="menu-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>Beranda</span>
+      </a>
+
+      <a href="#" class="menu-item">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Cari</span>
+      </a>
+
+      <a href="#" class="menu-item">
+        <i class="fa-regular fa-compass"></i>
+        <span>Jelajahi</span>
+      </a>
+
+      <a href="#" class="menu-item">
+        <i class="fa-solid fa-film"></i>
+        <span>Reels</span>
+      </a>
+
+      <a href="#" class="menu-item">
+        <i class="fa-regular fa-paper-plane"></i>
+        <span>Pesan</span>
+      </a>
+
+      <a href="#" class="menu-item">
+        <i class="fa-regular fa-heart"></i>
+        <span>Notifikasi</span>
+      </a>
+
+      <a href="#" class="menu-item">
+        <i class="fa-regular fa-square-plus"></i>
+        <span>Buat</span>
+      </a>
+
+      <a href="#profile" class="menu-item">
+        <img src="assets/profile.jpg" alt="Profile" class="small-avatar" />
+        <span>Profil</span>
+      </a>
+    </nav>
+
+    <div class="more-menu">
+      <i class="fa-solid fa-bars"></i>
+      <span>Lainnya</span>
+    </div>
+  </aside>
+
+  <main class="main-content" id="profile">
+    <section class="profile-header">
+      <div class="profile-photo-wrapper">
+        <div class="profile-ring">
+          <img
+            src="assets/profile.jpg"
+            alt="Satsuki Shinonome"
+            class="profile-photo"
+          />
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="profile-top">
+          <h1>satsuki_shinonome</h1>
+
+          <span class="verified-badge" title="Verified">
+            <i class="fa-solid fa-circle-check"></i>
+          </span>
+
+          <button class="btn follow-btn">Follow</button>
+          <button class="btn message-btn">Message</button>
+
+          <button class="icon-btn" aria-label="More options">
+            <i class="fa-solid fa-ellipsis"></i>
+          </button>
         </div>
 
-        <div class="profile-main">
-          <div class="desktop-identity">
-            <h1>satsuki_shinonome</h1>
-            <button class="primary-action" type="button">Follow</button>
-            <button class="secondary-action" type="button">Message</button>
-            <button class="icon-button borderless" type="button" aria-label="Pengaturan">...</button>
-          </div>
-
-          <dl class="stats">
-            <div>
-              <dt>14</dt>
-              <dd>posts</dd>
-            </div>
-            <div>
-              <dt>12.8K</dt>
-              <dd>followers</dd>
-            </div>
-            <div>
-              <dt>184</dt>
-              <dd>following</dd>
-            </div>
-          </dl>
-
-          <div class="bio desktop-bio">
-            <strong>Satsuki Shinonome</strong>
-            <span>Digital persona / portfolio archive</span>
-            <p>Student aura, midnight coding, clean UI, and quiet blue energy. Building tiny worlds one commit at a time.</p>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/satsuki-shinonome</a>
-          </div>
+        <div class="profile-stats">
+          <div><strong>86</strong> posts</div>
+          <div><strong>129K</strong> followers</div>
+          <div><strong>214</strong> following</div>
         </div>
-      </section>
 
-      <section class="bio mobile-bio" aria-label="Bio profil">
-        <strong>Satsuki Shinonome</strong>
-        <span>Digital persona / portfolio archive</span>
-        <p>Student aura, midnight coding, clean UI, and quiet blue energy. Building tiny worlds one commit at a time.</p>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/satsuki-shinonome</a>
-      </section>
+        <div class="profile-bio">
+          <p class="display-name">Satsuki Shinonome ✦</p>
+          <p class="bio-text">
+            Visual diary, late-night sketches, city lights, and quiet moments.
+          </p>
+          <p class="bio-text">
+            Tokyo ↔ Jakarta · Creative Archive
+          </p>
 
-      <div class="mobile-actions" aria-label="Aksi profil">
-        <button class="primary-action" type="button">Follow</button>
-        <button class="secondary-action" type="button">Message</button>
-        <button class="secondary-action small" type="button">v</button>
+          <a href="#" class="bio-link">
+            <i class="fa-solid fa-link"></i>
+            satsuki-archive.example
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="highlight-item">
+        <div class="highlight-ring">
+          <img src="assets/post-1.jpg" alt="Highlight Tokyo" />
+        </div>
+        <span>Tokyo</span>
       </div>
 
-      <section class="highlights" aria-label="Sorotan profil">
-        <article class="highlight">
-          <span class="highlight-ring">UI</span>
-          <strong>design</strong>
-        </article>
-        <article class="highlight">
-          <span class="highlight-ring">JS</span>
-          <strong>scripts</strong>
-        </article>
-        <article class="highlight">
-          <span class="highlight-ring">GH</span>
-          <strong>github</strong>
-        </article>
-        <article class="highlight">
-          <span class="highlight-ring">CV</span>
-          <strong>profile</strong>
-        </article>
-      </section>
+      <div class="highlight-item">
+        <div class="highlight-ring">
+          <img src="assets/post-2.jpg" alt="Highlight Art" />
+        </div>
+        <span>Sketchbook</span>
+      </div>
 
-      <nav class="profile-tabs" aria-label="Tab konten profil">
-        <button class="tab active" type="button" data-filter="all">POSTS</button>
-        <button class="tab" type="button" data-filter="reels">REELS</button>
-        <button class="tab" type="button" data-filter="tagged">TAGGED</button>
-      </nav>
+      <div class="highlight-item">
+        <div class="highlight-ring">
+          <img src="assets/post-3.jpg" alt="Highlight Coffee" />
+        </div>
+        <span>Coffee</span>
+      </div>
 
-      <section class="post-grid" aria-label="Grid postingan">
-        <article class="post tile-photo large" data-type="all">
-          <img src="assets/profile.jpg" alt="Portrait Satsuki" />
-          <span>12.4K</span>
-        </article>
-        <article class="post tile-note" data-type="reels">
-          <strong>Night Build</strong>
-          <p>HTML, CSS, and one stubborn idea polished after class.</p>
-        </article>
-        <article class="post tile-code" data-type="all">
-          <strong>Portfolio.jsx</strong>
-          <code>&lt;Profile mood="blue" /&gt;</code>
-        </article>
-        <article class="post tile-photo crop-top" data-type="tagged">
-          <img src="assets/profile.jpg" alt="Detail seragam biru" />
-          <span>8.1K</span>
-        </article>
-        <article class="post tile-metric" data-type="all">
-          <small>current status</small>
-          <strong>online</strong>
-          <p>shipping pixels carefully</p>
-        </article>
-        <article class="post tile-gradient" data-type="reels">
-          <strong>Mini Reel</strong>
-          <p>3 seconds of interface magic.</p>
-        </article>
-        <article class="post tile-code dark" data-type="all">
-          <strong>README.md</strong>
-          <code>hello, visitor.</code>
-        </article>
-        <article class="post tile-photo crop-face" data-type="tagged">
-          <img src="assets/profile.jpg" alt="Close-up portrait Satsuki" />
-          <span>9.7K</span>
-        </article>
-        <article class="post tile-note pale" data-type="all">
-          <strong>Saved</strong>
-          <p>Ideas for a calmer portfolio homepage.</p>
-        </article>
-      </section>
-    </main>
+      <div class="highlight-item">
+        <div class="highlight-ring">
+          <img src="assets/post-4.jpg" alt="Highlight Night" />
+        </div>
+        <span>After Dark</span>
+      </div>
+
+      <div class="highlight-item">
+        <div class="highlight-ring">
+          <img src="assets/post-5.jpg" alt="Highlight Film" />
+        </div>
+        <span>Film Roll</span>
+      </div>
+
+      <div class="highlight-item">
+        <div class="highlight-ring">
+          <img src="assets/post-6.jpg" alt="Highlight Notes" />
+        </div>
+        <span>Notes</span>
+      </div>
+    </section>
+
+    <section class="profile-tabs">
+      <button class="tab active">
+        <i class="fa-solid fa-table-cells"></i>
+        POSTS
+      </button>
+
+      <button class="tab">
+        <i class="fa-solid fa-clapperboard"></i>
+        REELS
+      </button>
+
+      <button class="tab">
+        <i class="fa-regular fa-bookmark"></i>
+        SAVED
+      </button>
+
+      <button class="tab">
+        <i class="fa-solid fa-user-tag"></i>
+        TAGGED
+      </button>
+    </section>
+
+    <section class="post-grid">
+      <article class="post-card" data-image="assets/post-1.jpg">
+        <img src="assets/post-1.jpg" alt="Tokyo evening" />
+        <div class="post-overlay">
+          <span><i class="fa-solid fa-heart"></i> 8,412</span>
+          <span><i class="fa-solid fa-comment"></i> 126</span>
+        </div>
+      </article>
+
+      <article class="post-card" data-image="assets/post-2.jpg">
+        <img src="assets/post-2.jpg" alt="Sketchbook art" />
+        <div class="post-overlay">
+          <span><i class="fa-solid fa-heart"></i> 12,903</span>
+          <span><i class="fa-solid fa-comment"></i> 243</span>
+        </div>
+      </article>
+
+      <article class="post-card" data-image="assets/post-3.jpg">
+        <img src="assets/post-3.jpg" alt="Coffee aesthetic" />
+        <div class="post-overlay">
+          <span><i class="fa-solid fa-heart"></i> 6,742</span>
+          <span><i class="fa-solid fa-comment"></i> 94</span>
+        </div>
+      </article>
+
+      <article class="post-card" data-image="assets/post-4.jpg">
+        <img src="assets/post-4.jpg" alt="Night street" />
+        <div class="post-overlay">
+          <span><i class="fa-solid fa-heart"></i> 15,621</span>
+          <span><i class="fa-solid fa-comment"></i> 318</span>
+        </div>
+      </article>
+
+      <article class="post-card" data-image="assets/post-5.jpg">
+        <img src="assets/post-5.jpg" alt="Film photography" />
+        <div class="post-overlay">
+          <span><i class="fa-solid fa-heart"></i> 9,107</span>
+          <span><i class="fa-solid fa-comment"></i> 167</span>
+        </div>
+      </article>
+
+      <article class="post-card" data-image="assets/post-6.jpg">
+        <img src="assets/post-6.jpg" alt="Creative notes" />
+        <div class="post-overlay">
+          <span><i class="fa-solid fa-heart"></i> 7,854</span>
+          <span><i class="fa-solid fa-comment"></i> 102</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="image-modal" id="imageModal">
+    <button class="modal-close" id="modalClose">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img src="" alt="Preview post" id="modalImage" />
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalClose = document.getElementById("modalClose");
+
+    document.querySelectorAll(".post-card").forEach((post) => {
+      post.addEventListener("click", () => {
+        modalImage.src = post.dataset.image;
+        modal.classList.add("show");
+      });
+    });
+
+    modalClose.addEventListener("click", () => {
+      modal.classList.remove("show");
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.classList.remove("show");
+      }
+    });
+
+    document.querySelector(".follow-btn").addEventListener("click", function () {
+      this.textContent = this.textContent === "Follow" ? "Following" : "Follow";
+      this.classList.toggle("following");
+    });
+  </script>
 </body>
 </html>
